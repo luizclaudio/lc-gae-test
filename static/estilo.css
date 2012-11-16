@@ -1,0 +1,203 @@
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    xfont-weight: bold;
+}
+
+
+a.botao{
+    color: black;
+    background-color: #eeeeee;
+    border: 1px solid #999999;
+    padding: 2px;
+}
+
+a.botao:hover{
+    color: white;
+    background-color: #aaaaaa;
+    border: 1px solid #999999;
+    padding: 2px;
+}
+
+a.botao:visited{
+    color: black;
+    background-color: #eeeeee;
+    border: 1px solid #999999;
+    padding: 2px;
+}
+
+a.botaoPeq{
+    color: black;
+    background-color: #eeeeee;
+    border: 1px solid #999999;
+    padding: 0px;
+}
+
+a.botaoPeq:hover{
+    color: white;
+    background-color: #aaaaaa;
+    border: 1px solid #999999;
+    padding: 0px;
+}
+
+a.botaoPeq:visited{
+    color: black;
+    background-color: #eeeeee;
+    border: 1px solid #999999;
+    padding: 0px;
+}
+
+a.texto{
+    color: black;
+    Xfont-weight: bold;
+    text-decoration: none;
+    Xtext-decoration: underline;
+}
+
+a.texto:hover{
+    color: black;
+    Xfont-weight: bold;
+    text-decoration: underline;
+}
+
+a.texto:visited{
+    color: black;
+    Xfont-weight: bold;
+    Xtext-decoration: none;
+    Xtext-decoration: underline;
+}
+
+a.lnkIndigo:link{
+    color: #333399;
+    text-decoration: none;
+}
+
+a.lnkIndigo:visited{
+    color: #333399;
+    text-decoration: none;
+}
+
+a.lnkIndigo:hover{
+    color: red;
+    xfont-weight: bold;
+}
+
+
+a.lnkBranco:link{
+    color: white;
+    text-decoration: none;
+}
+
+a.lnkBranco:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a.lnkBranco:hover{
+    color: #c0c0c0;
+    xfont-weight: bold;
+}
+
+a.lnkAmarelo:link{
+    color: yellow;
+    text-decoration: none;
+}
+
+a.lnkAmarelo:visited{
+    color: yellow;
+    text-decoration: none;
+}
+
+a.lnkAmarelo:hover{
+    color: #c0c0c0;
+    xfont-weight: bold;
+}
+
+
+a.lnkVerde:link{
+    color: #006600;
+    text-decoration: none;
+}
+
+a.lnkVerde:visited{
+    color: #006600;
+    text-decoration: none;
+}
+
+a.lnkVerde:hover{
+    color: red;    
+}
+
+
+.campo{
+    font-family: Arial;
+    font-size: 12px;
+    border: 1px solid #A0A0A0;
+    padding: 1px;
+}
+
+.campoPeq{
+    font-family: Arial;
+    font-size: 10px;
+    border: 1px solid #A0A0A0;
+    padding: 1px;
+}
+
+
+
+// -------------------------------------
+
+a.preto:link{
+    color: black;
+    text-decoration: none;
+}
+
+a.preto:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a.preto:hover{
+    color: #83c327;
+    xfont-weight: bold;
+}
+
+a.verde:link{
+    color: #2f5c71;
+    text-decoration: none;
+}
+
+a.verde:visited{
+    color: #2f5c71;
+    text-decoration: none;
+}
+
+a.verde:hover{
+    color: #ff0000;
+    xfont-weight: bold
+}
+
+
+.celula{
+    border: 1px solid #A0A0A0;
+}
+
+*#tt{
+    font-family: courier new, courier;
+    font-size: 12px;
+    width: 350px
+}
+
+*#tt2{
+    font-family: courier new, courier;
+    font-size: 12px;width: 250px
+}

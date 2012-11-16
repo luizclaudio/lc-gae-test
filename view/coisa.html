@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+		<script language="JavaScript" type="text/javascript" src="/static/coisa.js"></script>
+
+		<h2>Coisa</h2>
+
+		<!-- MENU PÁGINA -->
+		<a href="#" onClick="salvarCoisa()">Salvar</a> |
+		<a href="/coisa/listar">Cancelar</a>
+		<br><br>
+		<!-- ---------- -->
+
+		<form name="formulario" id="formulario" method="post" action="/coisa/salvar">
+		<input type="hidden" name="key" id="key" value="{{ key }}">
+
+		<table width="100%" cellspacing="0" cellpadding="4" border="1">
+			<tr>
+				<td width="20%"><b>Categoria:</b></td>
+				<td width="80%">
+					<select name="categoria" id="categoria">
+						<option>--- Selecione ---</option>
+						{% for cat in cats %}
+							<option value="{{ cat.key }}"
+							{% ifequal cat.key categoria %}
+								selected="selected"
+							{% endifequal %}
+							>{{ cat.descricao }}</option>
+						{% endfor %}
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Nome:</b></td>
+				<td><input type="text"  name="nome" id="nome" size="50" value="{{ nome }}"></td>
+			</tr>
+			<tr>
+				<td><b>Descri&ccedil;&atilde;o:</b></td>
+				<td><input type="text"  name="descricao" id="descricao" size="70" value="{{ descricao }}"></td>
+			</tr>
+			<tr>
+				<td><b>Pre&ccedil;o:</b></td>
+				<td><input type="text" name="preco" id="preco" size="25" value="{{ preco }}"></td>
+			</tr>
+		</table>
+
+		</form>
+
+{% endblock %}

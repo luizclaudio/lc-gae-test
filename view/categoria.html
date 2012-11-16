@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+		<script language="JavaScript" type="text/javascript" src="/static/categoria.js"></script>
+
+		<h2>Categoria</h2>
+		<!-- MENU PÁGINA -->
+		<a href="#" onClick="salvarCategoria()">Salvar</a> |
+		<a href="/categoria/listar">Cancelar</a>
+		<br><br>
+		<!-- ---------- -->
+		<form name="formulario" id="formulario" method="post" action="/categoria/salvar">
+		<input type="hidden" name="key" id="key" value="{{ key }}">
+		<table width="100%" cellspacing="0" cellpadding="4" border="1">
+			<tr>
+				<td width="20%"><b>Descri&ccedil;&atilde;o:</b></td>
+				<td width="80%"><input type="text" name="descricao" id="descricao" size="50" value="{{ descricao }}"></td>
+			</tr>
+		</table>
+		</form>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+		<script language="JavaScript" type="text/javascript" src="/static/coisa.js"></script>
+
+		<h2>Coisas</h2>
+		<!-- MENU PÁGINA -->
+		<a href="/coisa/novo">Nova Coisa</a>
+		<br><br>
+		<!-- ---------- -->
+		<table width="100%" cellspacing="0" cellpadding="4" border="1">
+			<tr>
+				<th width="20%">Nome</th>
+				<th width="40%">Descri&ccedil;&atilde;o</th>
+				<th width="10%">Pre&ccedil;o</th>
+				<th width="20%">Categoria</th>
+				<th width="10%">A&ccedil;&otilde;es</th>
+			</tr>
+			{% ifequal objs.count 0 %}
+				<tr><td colspan="5" align="center">(Nenhum registro)</td></tr>
+			{% else %}
+				{% for obj in objs %}
+					<tr>
+						<td><a href="/coisa/editar/{{ obj.key }}">{{ obj.nome }}</a></td>
+						<td><a>{{ obj.descricao }}</a></td>
+						<td><a>{{ obj.preco|floatformat:2 }}</a></td>
+						<td><a>{{ obj.categoria.descricao }}</a></td>
+						<td>
+							<a href="#" onClick="excluirCoisa('{{ obj.key }}' , '{{ obj.nome }}')">excluir</a>
+						</td>
+					</tr>
+				{% endfor %}
+			{% endifequal %}
+		</table>
+
+{% endblock %}
